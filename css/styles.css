@@ -495,7 +495,7 @@ border-radius: 4px;
     .header-container{
         display: flex;
         justify-content: space-between;
-        padding: 24px 16px;
+        padding: 24px 15px;
     }
     .logo{   
     font-family: 'Raleway';
@@ -555,6 +555,7 @@ border-radius: 4px;
     .contakt-list{
         display: flex;
         flex-direction: column;
+        gap: 4px;
     }
     .contakt-link{
     
@@ -851,6 +852,7 @@ fill:  var(--maim-btn-active-color);
 }
 .container-logo{
     text-align: center;
+    margin-bottom: 72px; 
 }
 
 .logo-footer{
@@ -861,15 +863,15 @@ fill:  var(--maim-btn-active-color);
     line-height: 1.33;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-color: var(--maim-logo-text-color);
-    
+    color: var(--maim-logo-text-color);
+   
 }
 
 .footer-text{ 
     text-align: start;
     width: 264px;
     margin-top: 16px;
-    margin-bottom: 72px;  
+
 color: var(--maim-text-futer-color);
 }
 .footer-spec-conteiner{
@@ -1000,7 +1002,15 @@ transition: background-color var(--main-content-transition);
         line-height: 0;
 
     }
+.mobail-menu-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 40px;
+
+}
    .mobail-menu{
+
     position: fixed;
     z-index: 1000;
     width: 100%;
@@ -1040,7 +1050,7 @@ height: 8px;
 width: 8px;
    }
    .mobail-list {
-    margin-bottom: 284px;
+
 }
 
 .mobail-item:not(:last-child) {
@@ -1058,6 +1068,9 @@ transition: color var(--main-content-transition);
 .mobail-link:hover,
 .mobail-link:focus{
     color: var(--maim-btn-active-color);
+}
+.mobail-contakt-container{
+    margin-top: auto;
 }
 .mobail-address {
 }
@@ -1189,7 +1202,7 @@ transition: color var(--main-content-transition);
         /* -----------footer----------- */
 
 .container-footer{
-    padding-left: 108px;
+    width: 565px;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
@@ -1197,18 +1210,15 @@ transition: color var(--main-content-transition);
 }
 .container-logo{
     text-align: start;
+    margin-right: 24px; 
 }
 
-
-
 .footer-text{ 
-    margin-right: 24px;  
+ 
 }
 .footer-spec-conteiner{
     text-align: start;
 }
-
-
 
 .footer-form-container{
 margin-top: 0;
@@ -1236,7 +1246,7 @@ flex-direction: row;
     /* =============header=========== */
     /* =============/header========== */
     .header{
-    padding: 24px 0;    
+        
 }
 .header-container{
     align-items: center;
@@ -1249,10 +1259,17 @@ flex-direction: row;
 }
 
 .contakt-list{
+    gap: 0;
     flex-direction: row;
 }
 .contakt-item:not(:last-child){
     margin-right: 40px;
+}
+.contakt-link{
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--maim-text-color);
 }
     /* -----------hero----------- */
 .section-hero{
@@ -1360,17 +1377,15 @@ flex-direction: row;
                         padding-top: 100px;
                     }
                     .container-footer{
-                        padding-left: 0;
                         flex-wrap: nowrap; 
 
                     }
                     .container-logo{
                         margin-right: 120px;
+                        margin-bottom: 0;
                     }
                                         
                     .footer-text{ 
-                        margin-bottom: 0;
-                        margin-right: 0;
                     }
                     .footer-form-container{
                         margin-left: 80px;
